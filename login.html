@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | Kavish Informatics CRM</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#eef5ff;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+
+width:95%;
+max-width:420px;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.logo{
+
+width:80px;
+height:80px;
+background:#0b7cff;
+border-radius:50%;
+margin:auto;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:32px;
+font-weight:bold;
+
+}
+
+h2{
+
+text-align:center;
+margin-top:15px;
+color:#0b7cff;
+
+}
+
+p{
+
+text-align:center;
+color:#666;
+margin-bottom:25px;
+
+}
+
+label{
+
+font-weight:600;
+display:block;
+margin-top:15px;
+margin-bottom:6px;
+
+}
+
+input{
+
+width:100%;
+padding:14px;
+border-radius:10px;
+border:1px solid #ddd;
+font-size:15px;
+
+}
+
+select{
+
+width:100%;
+padding:14px;
+border-radius:10px;
+border:1px solid #ddd;
+font-size:15px;
+
+}
+
+.checkbox{
+
+margin-top:15px;
+display:flex;
+align-items:center;
+
+}
+
+.checkbox input{
+
+width:20px;
+margin-right:10px;
+
+}
+
+button{
+
+width:100%;
+margin-top:20px;
+padding:15px;
+background:#0b7cff;
+color:white;
+font-size:16px;
+font-weight:bold;
+border:none;
+border-radius:12px;
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#0066dd;
+
+}
+
+.demo{
+
+background:#00b894;
+
+}
+
+.demo:hover{
+
+background:#009e78;
+
+}
+
+.links{
+
+margin-top:20px;
+display:flex;
+justify-content:space-between;
+font-size:14px;
+
+}
+
+.links a{
+
+text-decoration:none;
+color:#0b7cff;
+
+}
+
+.footer{
+
+margin-top:25px;
+text-align:center;
+font-size:13px;
+color:#888;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+
+KI
+
+</div>
+
+<h2>Kavish Informatics CRM</h2>
+
+<p>Professional IT Maintenance Solutions</p>
+
+<label>User Type</label>
+
+<select>
+
+<option>Employee</option>
+
+<option>Admin</option>
+
+</select>
+
+<label>Email</label>
+
+<input type="email" placeholder="Enter Email">
+
+<label>Password</label>
+
+<input type="password" placeholder="Enter Password">
+
+<div class="checkbox">
+
+<input type="checkbox">
+
+Remember Me
+
+</div>
+
+<button onclick="login()">
+
+LOGIN
+
+</button>
+
+<button class="demo" onclick="demoLogin()">
+
+Demo Login
+
+</button>
+
+<div class="links">
+
+<a href="#">Forgot Password?</a>
+
+<a href="index.html">Home</a>
+
+</div>
+
+<div class="footer">
+
+© 2026 Kavish Informatics
+
+</div>
+
+</div>
+
+<script>
+
+function login(){
+
+alert("Firebase Login will be added in V2.");
+
+window.location.href="dashboard.html";
+
+}
+
+function demoLogin(){
+
+window.location.href="dashboard.html";
+
+}
+
+</script>
+
+</body>
+
+  </html>
