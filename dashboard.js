@@ -3,109 +3,83 @@
 // dashboard.js
 // ===========================
 
-document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded", function () {
 
-console.log("Dashboard Loaded Successfully");
+    console.log("Dashboard Loaded Successfully");
 
-// Dashboard Stats (Dummy)
+    // Dashboard Stats (Dummy)
+    const stats = {
+        visits: 0,
+        companies: 0,
+        followup: 0,
+        hotleads: 0
+    };
 
-const stats={
+    console.log(stats);
 
-visits:0,
-companies:0,
-followup:0,
-hotleads:0
+    // ==========================
+    // Quick Action Buttons
+    // ==========================
 
-};
+    document.getElementById("newSurveyBtn").onclick = function () {
+        window.location.href = "survey.html";
+    };
 
-console.log(stats);
+    document.getElementById("submittedSurveyBtn").onclick = function () {
+        window.location.href = "submitted-surveys.html";
+    };
 
-// Quick Buttons
+    document.getElementById("companiesBtn").onclick = function () {
+        alert("Companies Module Coming Soon");
+    };
 
-document.getElementById("newSurveyBtn").onclick=function(){
+    document.getElementById("assetsBtn").onclick = function () {
+        alert("Assets Module Coming Soon");
+    };
 
-document.getElementById("submittedSurveyBtn").onclick = function () {
-    window.location.href = "submitted-surveys.html";
-}; 
+    document.getElementById("workspaceBtn").onclick = function () {
+        alert("Google Workspace Module Coming Soon");
+    };
 
-window.location.href="survey.html";
+    document.getElementById("reportsBtn").onclick = function () {
+        window.location.href = "reports.html";
+    };
 
-}
+    document.getElementById("followupBtn").onclick = function () {
+        alert("Follow Up Module Coming Soon");
+    };
 
-document.getElementById("companiesBtn").onclick=function(){
+    document.getElementById("documentsBtn").onclick = function () {
+        alert("Documents Module Coming Soon");
+    };
 
-alert("Companies Module Coming Soon");
+    document.getElementById("settingsBtn").onclick = function () {
+        alert("Settings Coming Soon");
+    };
 
-}
+    // ==========================
+    // Bottom Navigation
+    // ==========================
 
-document.getElementById("assetsBtn").onclick=function(){
+    document.getElementById("homeBtn").onclick = function () {
+        window.location.href = "dashboard.html";
+    };
 
-alert("Assets Module Coming Soon");
+    document.getElementById("surveyBtn").onclick = function () {
+        window.location.href = "survey.html";
+    };
 
-}
+    document.getElementById("reportBtn").onclick = function () {
+        window.location.href = "reports.html";
+    };
 
-document.getElementById("workspaceBtn").onclick=function(){
+    document.getElementById("profileBtn").onclick = function () {
+        window.location.href = "profile.html";
+    };
 
-alert("Google Workspace Module");
-
-}
-
-document.getElementById("reportsBtn").onclick=function(){
-
-window.location.href="reports.html";
-
-}
-
-document.getElementById("followupBtn").onclick=function(){
-
-alert("Follow Up Module");
-
-}
-
-document.getElementById("documentsBtn").onclick=function(){
-
-alert("Documents Module");
-
-}
-
-document.getElementById("settingsBtn").onclick=function(){
-
-alert("Settings");
-
-}
-
-// Bottom Navigation
-
-document.getElementById("homeBtn").onclick=function(){
-
-window.location.href="dashboard.html";
-
-}
-
-document.getElementById("surveyBtn").onclick=function(){
-
-window.location.href="survey.html";
-
-}
-
-document.getElementById("reportBtn").onclick=function(){
-
-window.location.href="reports.html";
-
-}
-
-document.getElementById("profileBtn").onclick=function(){
-
-window.location.href="profile.html";
-
-}
-
-// Welcome Popup
-
-setTimeout(function(){
-
-console.log("Welcome to Kavish Informatics CRM");
-
-},1000);
+    // Welcome Message
+    setTimeout(function () {
+        console.log("Welcome to Kavish Informatics CRM");
+    }, 1000);
 
 });
