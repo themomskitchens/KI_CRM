@@ -24,6 +24,10 @@ console.log(stats);
 
 document.getElementById("newSurveyBtn").onclick=function(){
 
+document.getElementById("submittedSurveyBtn").onclick = function () {
+    window.location.href = "submitted-surveys.html";
+}; 
+
 window.location.href="survey.html";
 
 }
