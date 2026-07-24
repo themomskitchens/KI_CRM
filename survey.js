@@ -78,13 +78,17 @@ function saveSurvey() {
 
     // Clear Form
 
-    document.querySelectorAll("input").forEach(input => {
-
-        if (input.type !== "date")
-
-            input.value = "";
-
-    });
+    const company = document.getElementById("companyName").value;
+const industry = document.getElementById("industry").value;
+const website = document.getElementById("website").value;
+const officeAddress = document.getElementById("officeAddress").value;
+const employees = document.getElementById("employees").value;
+const itHead = document.getElementById("itHead").value;
+const hrName = document.getElementById("hrName").value;
+const adminName = document.getElementById("adminName").value;
+const mobile = document.getElementById("mobile").value;
+const email = document.getElementById("email").value;
+const notes = document.getElementById("notes").value;
 
     document.querySelector("textarea").value = "";
 
