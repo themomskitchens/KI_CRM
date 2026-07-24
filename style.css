@@ -1,0 +1,276 @@
+/* ===========================
+   KAVISH INFORMATICS CRM
+   STYLE.CSS
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:#edf5ff;
+color:#222;
+
+}
+
+.container{
+
+max-width:480px;
+margin:auto;
+padding:18px;
+
+}
+
+header{
+
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:25px;
+
+}
+
+.logo{
+
+width:65px;
+height:65px;
+border-radius:50%;
+background:linear-gradient(135deg,#0b7cff,#00b8ff);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:26px;
+font-weight:bold;
+color:white;
+box-shadow:0 8px 20px rgba(11,124,255,.35);
+
+}
+
+header h2{
+
+font-size:22px;
+color:#0b7cff;
+
+}
+
+header p{
+
+color:#777;
+font-size:13px;
+
+}
+
+/* Cards */
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-bottom:25px;
+
+}
+
+.card{
+
+background:white;
+border-radius:18px;
+padding:18px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-4px);
+
+}
+
+.card h3{
+
+font-size:14px;
+color:#777;
+margin-bottom:10px;
+
+}
+
+.card h1{
+
+font-size:34px;
+color:#0b7cff;
+
+}
+
+/* Quick Action */
+
+.actions{
+
+margin-bottom:25px;
+
+}
+
+.actions h3{
+
+margin-bottom:15px;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+
+}
+
+.grid button{
+
+border:none;
+padding:18px;
+border-radius:16px;
+background:white;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.grid button:hover{
+
+background:#0b7cff;
+color:white;
+
+}
+
+/* Schedule */
+
+.schedule{
+
+background:white;
+padding:18px;
+border-radius:18px;
+margin-bottom:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.schedule h3{
+
+margin-bottom:15px;
+
+}
+
+.meeting{
+
+padding:12px;
+border-left:5px solid #0b7cff;
+margin-bottom:12px;
+background:#f7fbff;
+border-radius:10px;
+
+}
+
+/* Activity */
+
+.activity{
+
+background:white;
+padding:18px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+margin-bottom:90px;
+
+}
+
+.activity h3{
+
+margin-bottom:15px;
+
+}
+
+.activity ul{
+
+list-style:none;
+
+}
+
+.activity li{
+
+padding:10px 0;
+border-bottom:1px solid #eee;
+
+}
+
+/* Bottom Navigation */
+
+nav{
+
+position:fixed;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+width:100%;
+max-width:480px;
+background:white;
+display:flex;
+justify-content:space-around;
+padding:12px 0;
+box-shadow:0 -5px 20px rgba(0,0,0,.12);
+
+}
+
+nav button{
+
+background:none;
+border:none;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+color:#555;
+transition:.3s;
+
+}
+
+nav button:hover{
+
+color:#0b7cff;
+
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+.container{
+
+padding:15px;
+
+}
+
+.cards{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.card h1{
+
+font-size:28px;
+
+}
+
+  }
