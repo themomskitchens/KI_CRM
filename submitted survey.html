@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submitted Surveys</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:Poppins,sans-serif;
+background:#eef5ff;
+padding:20px;
+}
+
+.card{
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+h2{
+color:#0b7cff;
+}
+
+button{
+width:100%;
+padding:14px;
+margin-top:15px;
+background:#0b7cff;
+color:#fff;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Submitted Surveys</h2>
+
+<div id="surveyList"></div>
+
+<button onclick="window.location='dashboard.html'">
+⬅ Back to Dashboard
+</button>
+
+<script>
+
+let surveys = JSON.parse(localStorage.getItem("surveys")) || [];
+
+let html="";
+
+if(surveys.length==0){
+
+html="<p>No Survey Found.</p>";
+
+}else{
+
+surveys.reverse().forEach(function(s){
+
+html += `
+<div class="card">
+
+<b>${s.company}</b><br><br>
+
+Survey ID : ${s.surveyId}<br>
+
+IT Head : ${s.itHead}<br>
+
+Mobile : ${s.mobile}<br>
+
+Lead : ${s.leadStatus}
+
+</div>
+`;
+
+});
+
+}
+
+document.getElementById("surveyList").innerHTML=html;
+
+</script>
+
+</body>
+</html>
